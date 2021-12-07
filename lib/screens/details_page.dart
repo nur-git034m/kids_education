@@ -18,12 +18,17 @@ class DetailsPage extends StatelessWidget {
           elevation: 0,
           backgroundColor: animal.color,
           centerTitle: true,
-          leading: const Icon(
-            
-            Icons.filter_list,
-            color: Colors.amber,
-            size: 40,
-          ),
+          leading: Builder(
+      builder: (BuildContext context) {
+        return IconButton(
+          icon: const Icon(Icons.filter_list,color: Colors.amber,size: 40,),
+          onPressed: () {
+            Scaffold.of(context).openDrawer();
+          },
+          tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+        );
+      },
+    ),
           actions: const [
             Image(image: AssetImage('assets/c_deer.png')),
           ]),
@@ -69,14 +74,14 @@ class DetailsPage extends StatelessWidget {
                       height: 10,
                     ),
                     Header(
-                      text: 'Lifespan',
+                      text: 'Өмірдің ұзақтығы',
                     ),
                     SubHeader(text: animal.lifespan!),
                     const SizedBox(
                       height: 10,
                     ),
                     Header(
-                      text: 'Speed',
+                      text: 'Жылдамдық',
                     ),
                     SubHeader(text: animal.speed!),
                     const SizedBox(
@@ -100,7 +105,7 @@ class DetailsPage extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Header(text: 'Images'),
+                              Header(text: 'Cуреттер'),
                               SizedBox(
                                 height: 100,
                                   child: ListView.builder(
@@ -119,6 +124,7 @@ class DetailsPage extends StatelessWidget {
                         )))
         ],
       ),
+       drawer: const DrawerAppbar(),
     );
   }
 }

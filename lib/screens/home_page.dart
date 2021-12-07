@@ -28,7 +28,7 @@ class _HomePageState extends State<HomePage> {
         appBar: AppBar(
           
             title: const Text(
-              'Learn',
+              'Үйрену',
               style: TextStyle(fontSize: 30, color: Colors.black),
             ),
             elevation: 0,

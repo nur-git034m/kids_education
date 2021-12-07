@@ -39,35 +39,35 @@ String par =
 
 List<AnimalInfo> animallist = [
   AnimalInfo(1,
-      name: 'Crab',
+      name: 'Теңіз шаяны',
       color: Colors.red,
       iconImage: 'assets/c_crab.png',
-      description: "Crab don't have brain as their nervous system ",
-      paragraph: "A crab is a sea creature with a flat round body covered by a shell, "
-          "and five pairs of legs with large claws on the front pair. Crabs usually move sideways.Crab is the flesh of this creature eaten as food.",
+      description: "Шаянның жүйке жүйесі сияқты миы жоқ ",
+      paragraph: "Шаян - қабықпен жабылған жалпақ дөңгелек денелі теңіз жануары, "
+          "және алдыңғы жұпта үлкен тырнақтары бар бес жұп аяқ. Шаяндар әдетте бүйіріне қарай қозғалады. Шаян – бұл тіршілік иесінің тағам ретінде жейтін еті.",
       images: img,
-      lifespan: '3–4 years',
-      speed: ' A mile per day'),
+      lifespan: '3–4 жыл',
+      speed: ' Күніне бір миль'),
   AnimalInfo(2,
-      name: 'Fish',
+      name: 'Балық',
       color: Colors.lightBlueAccent,
       iconImage: 'assets/c_fish.png',
-      description: "A fish can cough.. Really!",
-      paragraph: "Fish are aquatic vertebrate animals that have gills but lack limbs with digits, like fingers or toes. Recall that vertebrates are animals with internal backbones. Most fish are streamlined in their general body form.",
+      description: "Балық жөтеледі.. Шынымен!",
+      paragraph: "Балықтар - су омыртқалы жануарлар, олардың желбезектері бар, бірақ саусақтары немесе саусақтары сияқты саусақтары жоқ. Еске салайық, омыртқалылар - ішкі омыртқалары бар жануарлар. Балықтардың көпшілігі жалпы дене пішінінде жеңілдетілген.",
       images: [
         'https://cdn.pixabay.com/photo/2011/12/13/14/39/venus-11022_1280.jpg',
         'https://image.shutterstock.com/image-photo/solar-system-venus-second-planet-600w-515581927.jpg'
       ],
-      lifespan: ' 3 – 5 years,',
-      speed: ' 3.2 km/h'),
+      lifespan: ' 3 – 5 жыл,',
+      speed: ' 3.2 км/сағ'),
   AnimalInfo(3,
-      name: 'Elephant',
+      name: 'Піл',
       color: Colors.grey,
       iconImage: 'assets/c_elephant.png',
-      description: "An elephant is the largest mammal on land.",
-      paragraph: "Elephants are mammals of the family Elephantidae and the largest "
-          "existing land animals. Three species are currently recognised: "
-          "the African bush elephant, the African forest elephant, and the Asian elephant.",
+      description: "Піл - құрлықтағы ең үлкен сүтқоректі.",
+      paragraph: " Пілдер - Elephantidae тұқымдасының сүтқоректілері және ең үлкені"
+          "бар жердегі жануарлар. Қазіргі уақытта үш түрі белгілі:"
+          "африкалық бұта пілі, африкалық орман пілі және азиялық піл.",
       images: [
         'https://cdn.pixabay.com/photo/2011/12/13/14/31/earth-11015_1280.jpg',
         'https://cdn.pixabay.com/photo/2011/12/14/12/11/astronaut-11080_1280.jpg',
@@ -77,50 +77,50 @@ List<AnimalInfo> animallist = [
       lifespan: '60- 70 years',
       speed: '40 km/h'),
   AnimalInfo(4,
-      name: 'Deer',
+      name: 'Бұғы',
       color: Colors.orangeAccent,
       iconImage: 'assets/c_deer.png',
-      description: "Their are various types of deer.",
-      paragraph: "A hoofed grazing or browsing animal, with branched bony antlers that are shed annually and typically borne only by the male.",
+      description: "Бұлардың әртүрлі түрлері бар.",
+      paragraph: "Жыл сайын төгілетін және әдетте тек еркек көтеретін тармақталған сүйекті мүйіздері бар тұяқты жайылым немесе шолақ жануар.",
       images: [],
       lifespan
-      :" 11 - 20 years",
+      :" 11 - 20 жыл",
       speed
-      :" 80 km/h"),
+      :" 80 км/сағ"),
   AnimalInfo(5,
-      name: 'Tiger',
+      name: 'Жолбарыс',
       color: Colors.black,
       iconImage: 'assets/c_tiger.png',
-      description: "A tiger can leap upto 33 feet at a time",
-      paragraph: "The tiger is the largest extant cat species and a member of the genus Panthera. It is most recognisable for its dark vertical stripes on orange-brown fur with a lighter underside",
-      images: ['https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fdaily-life-coping%2Fanimals.html&psig=AOvVaw2tyICxdtykNPDiPMRdnHdi&ust=1609860784022000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMi1ovTMgu4CFQAAAAAdAAAAABAO'],
+      description: "Жолбарыс бір уақытта 33 футқа дейін секіре алады",
+      paragraph: "Жолбарыс - мысықтардың ең үлкен түрі және пантера тұқымдасының өкілі. ",
+      images: [],
       lifespan
-      :"10 – 15 years",
+      :"10 – 15 жыл",
       speed
-      :"49 – 65 km/h "),
+      :"49 – 65 км/сағ "),
   AnimalInfo(6,
-      name: 'Rabbit',
+      name: 'Үй қоян',
       color: Colors.pink[50],
       iconImage: 'assets/c_rabbit.png',
       description:
-      "Rabbit are very delicate animal that they can die of fright.",
-      paragraph:"Rabbits are famous for hopping and eating carrots."
-          "      A male rabbit is called a buck, and a female is called a doe. A baby rabbit is called a kit, which is short for kitten. " ,
+      "Қоян - қорқыныштан өлуі мүмкін өте нәзік жануар.",
+      paragraph:"Қояндар секірумен және сәбізді жеумен танымал."
+          "Еркек қоянды тай, аналығын қанжыға деп атайды. Қоянның баласын жинақ деп атайды, ол көжек дегенді білдіреді." ,
       images: [],
       lifespan
-      :" 1 – 2 years",
+      :" 1 – 2 жыл",
       speed
-      :"4.0 km in 3.5 h"),
+      :"4.0 км  3.5 сағ"),
   AnimalInfo(7,
-      name: 'Blue bird',
+      name: 'Көк құс',
       color: Colors.lightBlue,
       iconImage: 'assets/c_bluebird.png',
-      description: "Bluebirds are loved by gardeners for their insect control "
-          "capabilities.",
-      paragraph: "A bluebird is usually perceived as a symbol of joy and happiness that are expecting you in the future. If this bird has appeared in your life, it will remind you of all the beauty of the nature around you.",
+      description: "Көк құстарды жәндіктермен күресу үшін бағбандар жақсы көреді",
+       
+      paragraph: "Көк құс әдетте сізді болашақта күтетін қуаныш пен бақыттың символы ретінде қабылданады. Егер бұл құс сіздің өміріңізде пайда болса, ол сізді қоршаған табиғаттың барлық сұлулығын еске түсіреді.",
       images: ['https://i.pinimg.com/originals/77/ef/ed/77efed825cab59e3e0a2d7d6aaf4f1a6.jpg'],
       lifespan
-      :" 6-10 years",
+      :" 6-10 жыл",
       speed
-      :" 40-50km/hr."),
+      :" 40-50км/сағ."),
 ];
