@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kids_education/screens/mini_games/drag_drop/color_game.dart';
+import 'package:kids_education/screens/mini_games/gues_for_memory/home_gues.dart';
 
 class Header extends StatelessWidget {
   Header({required this.text});
@@ -70,7 +71,7 @@ class DrawerAppbar extends StatelessWidget {
             ),
             accountEmail: Text('kids_education@example.com'),
             accountName: Text(
-              'Niggaдяй',
+              'User',
               style: TextStyle(fontSize: 24.0),
             ),
             decoration: BoxDecoration(
@@ -117,7 +118,12 @@ class DrawerAppbar extends StatelessWidget {
               'Угадай на память',
               style: TextStyle(fontSize: 20.0),
             ),
-            onTap: () {},
+            onTap: () {
+                       Navigator.push(
+    context,
+    MaterialPageRoute(builder: (context) => const HomeGuess()),
+  );
+            },
           ),
         ],
       ),

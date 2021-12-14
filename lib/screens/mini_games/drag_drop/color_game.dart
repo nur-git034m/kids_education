@@ -29,9 +29,22 @@ class ColorGameState extends State<ColorGame> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: Text('Шот ${score.length} / 6'), backgroundColor: Colors.pink),
-      floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.refresh),
+          title: Text('Шот ${score.length} / 6'), backgroundColor: Colors.transparent,
+          flexibleSpace: Container(
+          decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: <Color>[
+                    Colors.green,
+                    Colors.blue
+                  ])
+          ),
+        ),
+          ),
+     
+     floatingActionButton: FloatingActionButton(
+        child: const Icon(Icons.refresh,color: Colors.black,),
         onPressed: () {
           setState(() {
             score.clear();
