@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:kids_education/screens/child_salt/child_salt_page.dart';
+import 'package:kids_education/screens/child_salt/seven_tree.dart';
 import 'package:kids_education/screens/fairy_tales/audio_tales.dart';
+import 'package:kids_education/screens/fairy_tales/video_page.dart';
 import 'package:kids_education/screens/mini_games/drag_drop/color_game.dart';
 import 'package:kids_education/screens/mini_games/gues_for_memory/home_gues.dart';
+import 'package:kids_education/screens/mysterious_misleading/misleading_page.dart';
+import 'package:kids_education/screens/mysterious_misleading/mysterious_page.dart';
 
 class Header extends StatelessWidget {
-  Header({ this.text});
+  Header({this.text});
   final String text;
 
   @override
@@ -138,7 +143,7 @@ class DrawerAppbar extends StatelessWidget {
             ),
           ),
           Divider(),
-            ListTile(
+          ListTile(
             leading: SizedBox(
               height: 60.0,
               width: 60.0, // fixed width and height
@@ -156,7 +161,7 @@ class DrawerAppbar extends StatelessWidget {
               );
             },
           ),
-             ListTile(
+          ListTile(
             leading: SizedBox(
               height: 60.0,
               width: 60.0, // fixed width and height
@@ -168,13 +173,13 @@ class DrawerAppbar extends StatelessWidget {
               style: TextStyle(fontSize: 20.0),
             ),
             onTap: () {
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(builder: (context) => const HomeGuess()),
-              // );
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => VideoPlayerScreen()),
+              );
             },
           ),
-            Divider(),
+          Divider(),
           Padding(
             padding: EdgeInsets.all(8.0),
             child: Row(
@@ -197,7 +202,7 @@ class DrawerAppbar extends StatelessWidget {
             ),
           ),
           Divider(),
-            ListTile(
+          ListTile(
             leading: SizedBox(
               height: 60.0,
               width: 60.0, // fixed width and height
@@ -209,13 +214,13 @@ class DrawerAppbar extends StatelessWidget {
               style: TextStyle(fontSize: 20.0),
             ),
             onTap: () {
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(builder: (context) => const HomeGuess()),
-              // );
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const Mysterious_page()),
+              );
             },
           ),
-            ListTile(
+          ListTile(
             leading: SizedBox(
               height: 60.0,
               width: 60.0, // fixed width and height
@@ -227,13 +232,13 @@ class DrawerAppbar extends StatelessWidget {
               style: TextStyle(fontSize: 20.0),
             ),
             onTap: () {
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(builder: (context) => const HomeGuess()),
-              // );
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const MisleadingPage()),
+              );
             },
           ),
-           Divider(),
+          Divider(),
           const Padding(
             padding: EdgeInsets.all(8.0),
             child: Text(
@@ -245,7 +250,7 @@ class DrawerAppbar extends StatelessWidget {
             ),
           ),
           Divider(),
-                      ListTile(
+          ListTile(
             leading: SizedBox(
               height: 60.0,
               width: 60.0, // fixed width and height
@@ -257,13 +262,13 @@ class DrawerAppbar extends StatelessWidget {
               style: TextStyle(fontSize: 20.0),
             ),
             onTap: () {
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(builder: (context) => const HomeGuess()),
-              // );
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => ChildSaltPage()),
+              );
             },
           ),
-                ListTile(
+          ListTile(
             leading: SizedBox(
               height: 60.0,
               width: 60.0, // fixed width and height
@@ -275,13 +280,15 @@ class DrawerAppbar extends StatelessWidget {
               style: TextStyle(fontSize: 20.0),
             ),
             onTap: () {
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(builder: (context) => const HomeGuess()),
-              // );
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => SevenTreePage()),
+              );
             },
           ),
-          SizedBox(height: 60,),
+          SizedBox(
+            height: 60,
+          ),
         ],
       ),
     );
