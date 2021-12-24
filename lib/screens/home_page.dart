@@ -6,7 +6,7 @@ import 'data.dart';
 import 'widgets/custom_headers.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({Key key}) : super(key: key);
 
   @override
   State<HomePage> createState() => _HomePageState();

@@ -4,14 +4,14 @@ import 'mini_games/gues_for_memory/models.dart';
 
 class AnimalInfo {
   final int position;
-  final String? name;
-  final String? iconImage;
-  final String? description;
-  final Color? color;
-  final String? paragraph;
-  final List<String>? images;
-  final String? lifespan;
-  final String? speed;
+  final String name;
+  final String iconImage;
+  final String description;
+  final Color color;
+  final String paragraph;
+  final List<String> images;
+  final String lifespan;
+  final String speed;
 
   AnimalInfo(this.position,
       {this.name,

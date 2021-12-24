@@ -3,7 +3,7 @@ import 'package:kids_education/screens/data.dart';
 import 'package:kids_education/screens/widgets/custom_headers.dart';
 
 class DetailsPage extends StatelessWidget {
-  DetailsPage({required this.animal});
+  DetailsPage({ this.animal});
   final AnimalInfo animal;
 
   @override
@@ -12,7 +12,7 @@ class DetailsPage extends StatelessWidget {
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
           title: Text(
-            animal.name!,
+            animal.name,
             style: TextStyle(fontSize: 30, color: Colors.black),
           ),
           elevation: 0,
@@ -49,9 +49,9 @@ class DetailsPage extends StatelessWidget {
             child: GestureDetector(
               child: Center(
                 child: Hero(
-                  tag: animal.iconImage!,
+                  tag: animal.iconImage,
                   child: Image(
-                    image: AssetImage(animal.iconImage!),
+                    image: AssetImage(animal.iconImage),
                   ),
                 ),
               ),
@@ -68,22 +68,22 @@ class DetailsPage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Header(text: animal.name!),
-                    SubHeader(text: animal.paragraph!),
+                    Header(text: animal.name),
+                    SubHeader(text: animal.paragraph),
                     const SizedBox(
                       height: 10,
                     ),
                     Header(
                       text: 'Өмірдің ұзақтығы',
                     ),
-                    SubHeader(text: animal.lifespan!),
+                    SubHeader(text: animal.lifespan),
                     const SizedBox(
                       height: 10,
                     ),
                     Header(
                       text: 'Жылдамдық',
                     ),
-                    SubHeader(text: animal.speed!),
+                    SubHeader(text: animal.speed),
                     const SizedBox(
                       height: 10,
                     ),
@@ -96,7 +96,7 @@ class DetailsPage extends StatelessWidget {
             height: 150,
               child: Container(
                   color: Colors.white,
-                  child: animal.images!.length!= 0
+                  child: animal.images.length!= 0
                       ? Container(
                           color: Colors.white,
                           width: double.infinity,
@@ -111,11 +111,11 @@ class DetailsPage extends StatelessWidget {
                                   child: ListView.builder(
                                       shrinkWrap: true,
                                       scrollDirection: Axis.horizontal,
-                                      itemCount: animal.images!.length,
+                                      itemCount: animal.images.length,
                                       itemBuilder: (context, index) =>
                                           PictureCard(
                                               imageAsset:
-                                                  animal.images![index])))
+                                                  animal.images[index])))
                             ],
                           ),
                         )

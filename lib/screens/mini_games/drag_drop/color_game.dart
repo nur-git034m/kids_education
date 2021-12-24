@@ -3,7 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 class ColorGame extends StatefulWidget {
-  ColorGame({Key? key}) : super(key: key);
+  ColorGame({Key key}) : super(key: key);
 
   createState() => ColorGameState();
 }
@@ -80,7 +80,7 @@ class ColorGameState extends State<ColorGame> {
 
   Widget _buildDragTarget(emoji) {
     return DragTarget<String>(
-      builder: (BuildContext context, List<String?> incoming, List rejected) {
+      builder: (BuildContext context, List<String> incoming, List rejected) {
         if (score[emoji] == true) {
           return Container(
             color: Colors.white,
@@ -105,7 +105,7 @@ class ColorGameState extends State<ColorGame> {
 }
 
 class Emoji extends StatelessWidget {
-  Emoji({Key? key, required this.emoji}) : super(key: key);
+  Emoji({Key key, this.emoji}) : super(key: key);
 
   final String emoji;
 

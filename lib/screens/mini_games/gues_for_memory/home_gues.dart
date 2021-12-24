@@ -5,7 +5,7 @@ import 'package:kids_education/screens/home_page.dart';
 import 'models.dart';
 
 class HomeGuess extends StatefulWidget {
-  const HomeGuess({Key? key}) : super(key: key);
+  const HomeGuess({Key key}) : super(key: key);
 
   @override
   _HomeGuessState createState() => _HomeGuessState();
@@ -153,7 +153,7 @@ class Tile extends StatefulWidget {
   int tileIndex;
   _HomeGuessState parent;
 
-  Tile({required this.imagePathUrl, required this.tileIndex, required this.parent});
+  Tile({ this.imagePathUrl,  this.tileIndex,  this.parent});
 
   @override
   _TileState createState() => _TileState();

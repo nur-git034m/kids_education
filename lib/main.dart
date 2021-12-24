@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:kids_education/screens/fairy_tales/audio_tales.dart';
+import 'package:kids_education/screens/fairy_tales/video_page.dart';
+
 import 'package:kids_education/screens/home_page.dart';
 
 void main() {
@@ -6,7 +9,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({Key key}) : super(key: key);
 
  
   @override
@@ -17,7 +20,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
         primarySwatch: Colors.blue,
       ),
-      home:  const HomePage(),
+      home:  HomePage(),
     );
   }
 }

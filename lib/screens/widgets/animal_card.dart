@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:kids_education/screens/data.dart';
 
 class AnimalCard extends StatelessWidget {
-  AnimalCard({Key? key, required this.animal, required this.onPressed})
+  AnimalCard({Key key,  this.animal,  this.onPressed})
       : super(key: key);
   AnimalInfo animal;
   final VoidCallback onPressed;
@@ -29,10 +29,10 @@ class AnimalCard extends StatelessWidget {
             Positioned(
                 top: 25,
                 child: Hero(
-                  tag: animal.name!,
+                  tag: animal.name,
                   transitionOnUserGestures: true,
                   child: Image(
-                    image: AssetImage(animal.iconImage!),
+                    image: AssetImage(animal.iconImage),
                     width: 150,
                     height: 150,
                   ),
@@ -41,7 +41,7 @@ class AnimalCard extends StatelessWidget {
                 top: 25,
                 left: 160,
                 child: Text(
-                  animal.name!,
+                  animal.name,
                   style: const TextStyle(
                       color: Colors.white,
                       fontSize: 28,
@@ -57,7 +57,7 @@ class AnimalCard extends StatelessWidget {
                     opacity: 0.8,
                     child: Center(
                       child: Text(
-                        animal.description!,
+                        animal.description,
                         style: const TextStyle(
                             wordSpacing: 4,
                             fontSize: 20,
