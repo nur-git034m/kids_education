@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:kids_education/screens/data.dart';
-import 'package:kids_education/screens/home_page.dart';
+import 'package:kids_education/data/resources/data.dart';
+import 'package:kids_education/screens/animals_page/animals_page.dart';
 
 import 'models.dart';
 
 class HomeGuess extends StatefulWidget {
-  const HomeGuess({Key key}) : super(key: key);
+  const HomeGuess({Key? key}) : super(key: key);
 
   @override
   _HomeGuessState createState() => _HomeGuessState();
@@ -114,7 +114,7 @@ class _HomeGuessState extends State<HomeGuess> {
                       onTap: (){
                             Navigator.push(
     context,
-    MaterialPageRoute(builder: (context) => const HomePage()),
+    MaterialPageRoute(builder: (context) =>   AnimalsPage()),
   );
                       },
                       child: Container(
@@ -153,7 +153,7 @@ class Tile extends StatefulWidget {
   int tileIndex;
   _HomeGuessState parent;
 
-  Tile({ this.imagePathUrl,  this.tileIndex,  this.parent});
+  Tile({ required this.imagePathUrl,required  this.tileIndex, required this.parent});
 
   @override
   _TileState createState() => _TileState();
@@ -175,7 +175,7 @@ class _TileState extends State<Tile> {
               points = points + 100;
               print(selectedTile + " thishis" + widget.imagePathUrl);
 
-              TileModel tileModel =  TileModel(imageAssetPath: '', isSelected: null);
+              TileModel tileModel =  TileModel(imageAssetPath: ''  );
               print(widget.tileIndex);
               selected = true;
               Future.delayed(const Duration(seconds: 2), () {
@@ -223,7 +223,7 @@ class _TileState extends State<Tile> {
       child: Container(
         margin: EdgeInsets.all(5),
         child: myPairs[widget.tileIndex].getImageAssetPath() != ""
-            ? Image.asset(myPairs[widget.tileIndex].getIsSelected()
+            ? Image.asset(myPairs[widget.tileIndex].getIsSelected()!
                 ? myPairs[widget.tileIndex].getImageAssetPath()
                 : widget.imagePathUrl)
             : Container(

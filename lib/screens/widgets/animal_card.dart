@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:kids_education/screens/data.dart';
+import 'package:kids_education/data/resources/data.dart';
 
 class AnimalCard extends StatelessWidget {
-  AnimalCard({Key key,  this.animal,  this.onPressed})
+  AnimalCard({Key? key, required this.animal, required this.onPressed})
       : super(key: key);
   AnimalInfo animal;
   final VoidCallback onPressed;
