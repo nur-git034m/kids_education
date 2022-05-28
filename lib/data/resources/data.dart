@@ -43,7 +43,7 @@ List<AnimalInfo> animallist = [
   AnimalInfo(1,
       name: 'Теңіз шаяны',
       color: Colors.red,
-      iconImage: 'assets/c_crab.png',
+      iconImage: 'assets/game_png/c_crab.png',
       description: "Шаянның жүйке жүйесі сияқты миы жоқ ",
       paragraph:
           "Шаян - қабықпен жабылған жалпақ дөңгелек денелі теңіз жануары, "
@@ -54,7 +54,7 @@ List<AnimalInfo> animallist = [
   AnimalInfo(2,
       name: 'Балық',
       color: Colors.lightBlueAccent,
-      iconImage: 'assets/c_fish.png',
+      iconImage: 'assets/game_png/c_fish.png',
       description: "Балық жөтеледі.. Шынымен!",
       paragraph:
           "Балықтар - су омыртқалы жануарлар, олардың желбезектері бар, бірақ саусақтары немесе саусақтары сияқты саусақтары жоқ. Еске салайық, омыртқалылар - ішкі омыртқалары бар жануарлар. Балықтардың көпшілігі жалпы дене пішінінде жеңілдетілген.",
@@ -67,7 +67,7 @@ List<AnimalInfo> animallist = [
   AnimalInfo(3,
       name: 'Піл',
       color: Colors.grey,
-      iconImage: 'assets/c_elephant.png',
+      iconImage: 'assets/game_png/c_elephant.png',
       description: "Піл - құрлықтағы ең үлкен сүтқоректі.",
       paragraph:
           " Пілдер - Elephantidae тұқымдасының сүтқоректілері және ең үлкені"
@@ -84,7 +84,7 @@ List<AnimalInfo> animallist = [
   AnimalInfo(4,
       name: 'Бұғы',
       color: Colors.orangeAccent,
-      iconImage: 'assets/c_deer.png',
+      iconImage: 'assets/game_png/c_deer.png',
       description: "Бұлардың әртүрлі түрлері бар.",
       paragraph:
           "Жыл сайын төгілетін және әдетте тек еркек көтеретін тармақталған сүйекті мүйіздері бар тұяқты жайылым немесе шолақ жануар.",
@@ -94,7 +94,7 @@ List<AnimalInfo> animallist = [
   AnimalInfo(5,
       name: 'Жолбарыс',
       color: Colors.black,
-      iconImage: 'assets/c_tiger.png',
+      iconImage: 'assets/game_png/c_tiger.png',
       description: "Жолбарыс бір уақытта 33 футқа дейін секіре алады",
       paragraph:
           "Жолбарыс - мысықтардың ең үлкен түрі және пантера тұқымдасының өкілі. ",
@@ -104,7 +104,7 @@ List<AnimalInfo> animallist = [
   AnimalInfo(6,
       name: 'Үй қоян',
       color: Colors.pink,
-      iconImage: 'assets/c_rabbit.png',
+      iconImage: 'assets/game_png/c_rabbit.png',
       description: "Қоян - қорқыныштан өлуі мүмкін өте нәзік жануар.",
       paragraph: "Қояндар секірумен және сәбізді жеумен танымал."
           "Еркек қоянды тай, аналығын қанжыға деп атайды. Қоянның баласын жинақ деп атайды, ол көжек дегенді білдіреді.",
@@ -114,7 +114,7 @@ List<AnimalInfo> animallist = [
   AnimalInfo(7,
       name: 'Көк құс',
       color: Colors.lightBlue,
-      iconImage: 'assets/c_bluebird.png',
+      iconImage: 'assets/game_png/c_bluebird.png',
       description:
           "Көк құстарды жәндіктермен күресу үшін бағбандар жақсы көреді",
       paragraph:
@@ -151,55 +151,55 @@ List<TileModel> getPairs() {
   TileModel tileModel = TileModel(imageAssetPath: '', isSelected: null);
 
   //1
-  tileModel.setImageAssetPath("assets/fox.png");
+  tileModel.setImageAssetPath("assets/game_png/fox.png");
   tileModel.setIsSelected(false);
   pairs.add(tileModel);
   pairs.add(tileModel);
   tileModel = TileModel(imageAssetPath: '', isSelected: null);
 
   //2
-  tileModel.setImageAssetPath("assets/hippo.png");
+  tileModel.setImageAssetPath("assets/game_png/hippo.png");
   tileModel.setIsSelected(false);
   pairs.add(tileModel);
   pairs.add(tileModel);
   tileModel = TileModel(imageAssetPath: '', isSelected: null);
 
   //3
-  tileModel.setImageAssetPath("assets/horse.png");
+  tileModel.setImageAssetPath("assets/game_png/horse.png");
   tileModel.setIsSelected(false);
   pairs.add(tileModel);
   pairs.add(tileModel);
   tileModel = TileModel(imageAssetPath: '', isSelected: null);
 
   //4
-  tileModel.setImageAssetPath("assets/monkey.png");
+  tileModel.setImageAssetPath("assets/game_png/monkey.png");
   tileModel.setIsSelected(false);
   pairs.add(tileModel);
   pairs.add(tileModel);
   tileModel = TileModel(imageAssetPath: '', isSelected: null);
   //5
-  tileModel.setImageAssetPath("assets/panda.png");
+  tileModel.setImageAssetPath("assets/game_png/panda.png");
   tileModel.setIsSelected(false);
   pairs.add(tileModel);
   pairs.add(tileModel);
   tileModel = TileModel(imageAssetPath: '', isSelected: null);
 
   //6
-  tileModel.setImageAssetPath("assets/parrot.png");
+  tileModel.setImageAssetPath("assets/game_png/parrot.png");
   tileModel.setIsSelected(false);
   pairs.add(tileModel);
   pairs.add(tileModel);
   tileModel = TileModel(imageAssetPath: '', isSelected: null);
 
   //7
-  tileModel.setImageAssetPath("assets/rabbit.png");
+  tileModel.setImageAssetPath("assets/game_png/rabbit.png");
   tileModel.setIsSelected(false);
   pairs.add(tileModel);
   pairs.add(tileModel);
   tileModel = TileModel(imageAssetPath: '', isSelected: null);
 
   //8
-  tileModel.setImageAssetPath("assets/zoo.png");
+  tileModel.setImageAssetPath("assets/game_png/zoo.png");
   tileModel.setIsSelected(false);
   pairs.add(tileModel);
   pairs.add(tileModel);
@@ -214,55 +214,55 @@ List<TileModel> getQuestionPairs() {
   TileModel tileModel = TileModel(imageAssetPath: '', isSelected: null);
 
   //1
-  tileModel.setImageAssetPath("assets/question.png");
+  tileModel.setImageAssetPath("assets/game_png/question.png");
   tileModel.setIsSelected(false);
   pairs.add(tileModel);
   pairs.add(tileModel);
   tileModel = TileModel(imageAssetPath: '', isSelected: null);
 
   //2
-  tileModel.setImageAssetPath("assets/question.png");
+  tileModel.setImageAssetPath("assets/game_png/question.png");
   tileModel.setIsSelected(false);
   pairs.add(tileModel);
   pairs.add(tileModel);
   tileModel = TileModel(imageAssetPath: '', isSelected: null);
 
   //3
-  tileModel.setImageAssetPath("assets/question.png");
+  tileModel.setImageAssetPath("assets/game_png/question.png");
   tileModel.setIsSelected(false);
   pairs.add(tileModel);
   pairs.add(tileModel);
   tileModel = TileModel(imageAssetPath: '', isSelected: null);
 
   //4
-  tileModel.setImageAssetPath("assets/question.png");
+  tileModel.setImageAssetPath("assets/game_png/question.png");
   tileModel.setIsSelected(false);
   pairs.add(tileModel);
   pairs.add(tileModel);
   tileModel = TileModel(imageAssetPath: '', isSelected: null);
   //5
-  tileModel.setImageAssetPath("assets/question.png");
+  tileModel.setImageAssetPath("assets/game_png/question.png");
   tileModel.setIsSelected(false);
   pairs.add(tileModel);
   pairs.add(tileModel);
   tileModel = TileModel(imageAssetPath: '', isSelected: null);
 
   //6
-  tileModel.setImageAssetPath("assets/question.png");
+  tileModel.setImageAssetPath("assets/game_png/question.png");
   tileModel.setIsSelected(false);
   pairs.add(tileModel);
   pairs.add(tileModel);
   tileModel = TileModel(imageAssetPath: '', isSelected: null);
 
   //7
-  tileModel.setImageAssetPath("assets/question.png");
+  tileModel.setImageAssetPath("assets/game_png/question.png");
   tileModel.setIsSelected(false);
   pairs.add(tileModel);
   pairs.add(tileModel);
   tileModel = TileModel(imageAssetPath: '', isSelected: null);
 
   //8
-  tileModel.setImageAssetPath("assets/question.png");
+  tileModel.setImageAssetPath("assets/game_png/question.png");
   tileModel.setIsSelected(false);
   pairs.add(tileModel);
   pairs.add(tileModel);

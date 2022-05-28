@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:kids_education/data/resources/data.dart';
-import 'package:kids_education/screens/animals_page/animals_page.dart';
+import 'package:kids_education/screens/first_level/animals_page/animals_page.dart';
 
 import 'models.dart';
 
@@ -21,8 +22,8 @@ class _HomeGuessState extends State<HomeGuess> {
     super.initState();
     reStart();
   }
-  void reStart() {
 
+  void reStart() {
     myPairs = getPairs();
     myPairs.shuffle();
 
@@ -39,105 +40,150 @@ class _HomeGuessState extends State<HomeGuess> {
     });
   }
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.white,
+          elevation: 0,
+        title: const Text('IQ BALA'),
+        leading: IconButton(
+          icon: SvgPicture.asset('assets/svg/back.svg'),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 17.0),
+            child: SvgPicture.asset('assets/svg/menu.svg'),
+          )
+        ],
+      ),
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Container(
-          padding: EdgeInsets.symmetric(horizontal: 20, vertical: 50),
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 50),
           child: Column(
             children: <Widget>[
-              const SizedBox(
+              SizedBox(
+      width:326,
+      height: 54,
+      child: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(8),
+          ),
+          primary: Colors.green,
+        ),
+        onPressed: (){},
+        child: const Text(
+          'Жадынан болжау',
+          style: TextStyle(
+            fontWeight: FontWeight.w600,
+            fontSize: 15,
+            color: Colors.white,
+          ),
+        ),
+      ),
+    ),
+     const SizedBox(
                 height: 40,
               ),
-              points != 800 ? Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: <Widget>[
-                  Text(
-                    "$points/800",
-                    style: const TextStyle(
-                        fontSize: 20, fontWeight: FontWeight.w500),
-                  ),
-                  const Text(
-                    "Бағалар",
-                    textAlign: TextAlign.start,
-                    style: TextStyle(
-                        fontSize: 14, fontWeight: FontWeight.w300),
-                  ),
-                ],
-              ) : Container(),
+              points != 800
+                  ? Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
+                        Text(
+                          "$points/800",
+                          style: const TextStyle(
+                              fontSize: 20, fontWeight: FontWeight.w500),
+                        ),
+                        const Text(
+                          "Бағалар",
+                          textAlign: TextAlign.start,
+                          style: TextStyle(
+                              fontSize: 14, fontWeight: FontWeight.w300),
+                        ),
+                      ],
+                    )
+                  : Container(),
               SizedBox(
                 height: 20,
               ),
-              points != 800 ? GridView(
-                shrinkWrap: true,
-                //physics: ClampingScrollPhysics(),
-                scrollDirection: Axis.vertical,
-                gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-                    mainAxisSpacing: 0.0, maxCrossAxisExtent: 100.0),
-                children: List.generate(gridViewTiles.length, (index) {
-                  return Tile(
-                    imagePathUrl: gridViewTiles[index].getImageAssetPath(),
-                    tileIndex: index,
-                    parent: this,
-                  );
-                }),
-              ) : Container(
-                child: Column(
-                  children: <Widget>[
-                    GestureDetector(
-                      onTap: (){
-                        setState(() {
-                          points = 0;
-                          reStart();
-                        });
-                      },
-                      child: Container(
-                        height: 50,
-                        width: 200,
-                        alignment: Alignment.center,
-                        decoration: BoxDecoration(
-                          color: Colors.blue,
-                          borderRadius: BorderRadius.circular(24),
-                        ),
-                        child: const Text("Қайталау", style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 17,
-                            fontWeight: FontWeight.w500
-                        ),),
-                      ),
-                    ),
-                    SizedBox(height: 20,),
-                    GestureDetector(
-                      onTap: (){
-                            Navigator.push(
-    context,
-    MaterialPageRoute(builder: (context) =>   AnimalsPage()),
-  );
-                      },
-                      child: Container(
-                        height: 50,
-                        width: 200,
-                        alignment: Alignment.center,
-                        decoration: BoxDecoration(
-                          border: Border.all(
+              points != 800
+                  ? GridView(
+                      shrinkWrap: true,
+                      //physics: ClampingScrollPhysics(),
+                      scrollDirection: Axis.vertical,
+                      gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+                          mainAxisSpacing: 0.0, maxCrossAxisExtent: 100.0),
+                      children: List.generate(gridViewTiles.length, (index) {
+                        return Tile(
+                          imagePathUrl:
+                              gridViewTiles[index].getImageAssetPath(),
+                          tileIndex: index,
+                          parent: this,
+                        );
+                      }),
+                    )
+                  : Container(
+                      child: Column(
+                      children: <Widget>[
+                        GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              points = 0;
+                              reStart();
+                            });
+                          },
+                          child: Container(
+                            height: 50,
+                            width: 200,
+                            alignment: Alignment.center,
+                            decoration: BoxDecoration(
                               color: Colors.blue,
-                              width: 2
+                              borderRadius: BorderRadius.circular(24),
+                            ),
+                            child: const Text(
+                              "Қайталау",
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 17,
+                                  fontWeight: FontWeight.w500),
+                            ),
                           ),
-                          borderRadius: BorderRadius.circular(24),
                         ),
-                        child: const Text("Алғашқы бет", style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 17,
-                          fontWeight: FontWeight.w500
-                        ),),
-                      ),
-                    ),
-                  ],
-                )
-              )
+                        SizedBox(
+                          height: 20,
+                        ),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => AnimalsPage()),
+                            );
+                          },
+                          child: Container(
+                            height: 50,
+                            width: 200,
+                            alignment: Alignment.center,
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Colors.blue, width: 2),
+                              borderRadius: BorderRadius.circular(24),
+                            ),
+                            child: const Text(
+                              "Алғашқы бет",
+                              style: TextStyle(
+                                  color: Colors.blue,
+                                  fontSize: 17,
+                                  fontWeight: FontWeight.w500),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ))
             ],
           ),
         ),
@@ -146,14 +192,15 @@ class _HomeGuessState extends State<HomeGuess> {
   }
 }
 
-
-
 class Tile extends StatefulWidget {
   String imagePathUrl;
   int tileIndex;
   _HomeGuessState parent;
 
-  Tile({ required this.imagePathUrl,required  this.tileIndex, required this.parent});
+  Tile(
+      {required this.imagePathUrl,
+      required this.tileIndex,
+      required this.parent});
 
   @override
   _TileState createState() => _TileState();
@@ -175,7 +222,7 @@ class _TileState extends State<Tile> {
               points = points + 100;
               print(selectedTile + " thishis" + widget.imagePathUrl);
 
-              TileModel tileModel =  TileModel(imageAssetPath: ''  );
+              TileModel tileModel = TileModel(imageAssetPath: '');
               print(widget.tileIndex);
               selected = true;
               Future.delayed(const Duration(seconds: 2), () {
@@ -228,7 +275,7 @@ class _TileState extends State<Tile> {
                 : widget.imagePathUrl)
             : Container(
                 color: Colors.white,
-                child: Image.asset("assets/correct.png"),
+                child: Image.asset("assets/game_png/correct.png"),
               ),
       ),
     );

@@ -38,7 +38,7 @@ class PictureCard extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(10),
       child: FadeInImage.assetNetwork(
-        placeholder: 'assets/loading.gif',
+        placeholder: 'assets/game_png/loading.gif',
         image: imageAsset,
         width: 25,
         height: 25,
