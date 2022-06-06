@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:kids_education/screens/mini_games/drag_drop/color_game.dart';
-import 'package:kids_education/screens/mini_games/gues_for_memory/home_gues.dart';
+import 'package:kids_education/screens/home_page/mini_games/drag_drop/color_game.dart';
+import 'package:kids_education/screens/home_page/mini_games/gues_for_memory/home_gues.dart';
+
 
 class MiniGamesPage extends StatefulWidget {
   MiniGamesPage({Key? key}) : super(key: key);
@@ -68,7 +69,7 @@ class _MiniGamesPageState extends State<MiniGamesPage> {
                 onPressed: () {
                    Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) =>  ColorGame()),
+                    MaterialPageRoute(builder: (context) =>  const ColorGame()),
                   );
                 },
                 child: const Text(

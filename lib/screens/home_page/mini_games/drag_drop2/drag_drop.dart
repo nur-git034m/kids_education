@@ -1,22 +1,21 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
 
-class ColorGame extends StatefulWidget {
-  ColorGame({Key? key}) : super(key: key);
+class DrapDrop extends StatefulWidget {
+  const DrapDrop({Key? key}) : super(key: key);
 
-  createState() => ColorGameState();
+  createState() => DrapDropState();
 }
 
-class ColorGameState extends State<ColorGame> {
+class DrapDropState extends State<DrapDrop> {
   /// Map to keep track of score
   final Map<String, bool> score = {};
 
   /// Choices for game
   final Map choices = {
-    '🍏': Colors.green,
-    '🍋': Colors.yellow,
-    '🍅': Colors.red,
+    '🎾': Colors.green,
+    '👩‍🚀': Colors.yellow,
+    '👷‍♂️': Colors.red,
     '🍇': Colors.purple,
     '🥥': Colors.brown,
     '🥕': Colors.orange

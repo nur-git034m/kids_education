@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:kids_education/screens/home_page/mini_games/gues_for_memory/models.dart';
 
-import '../../screens/mini_games/gues_for_memory/models.dart';
+
 
 class AnimalInfo {
   final int position;

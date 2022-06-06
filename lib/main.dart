@@ -6,6 +6,7 @@ import 'package:kids_education/data/repositories/animal_repo.dart';
 import 'package:kids_education/data/repositories/twister_repo.dart';
 import 'package:kids_education/screens/home_page/home_page.dart';
 
+
 void main() {
   runApp(const MyApp());
 }
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
         title: 'Flutter Demo',
             theme: ThemeData(scaffoldBackgroundColor:  Colors.grey.shade100,appBarTheme:AppBarTheme( backgroundColor: Colors.grey.shade100,elevation: 0,centerTitle: true,titleTextStyle: const TextStyle(fontSize: 36, color: Colors.black,fontWeight: FontWeight.w700))),
         home:  const HomePage(),
+// home:  const DrapDrop(),
       ),
     );
   }

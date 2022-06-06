@@ -49,17 +49,17 @@
      return Scaffold(
        appBar: AppBar(
            backgroundColor: Colors.green[200],
-          title: Text('Ертегілер'),
+          title: const Text('Ертегілер'),
           leading: IconButton(onPressed: (){
             Navigator.pop(context);
-          },icon: Icon( Icons.arrow_back_ios),),
+          },icon: const Icon( Icons.arrow_back_ios),),
          ),
 
        body: SingleChildScrollView(
          child: Column(
            children: [
              Container(
-               padding: EdgeInsets.symmetric(horizontal: 10),
+               padding: const EdgeInsets.symmetric(horizontal: 10),
                 decoration: BoxDecoration(
                    color: Colors.white,
                    borderRadius: BorderRadius.circular(20.0),
@@ -77,7 +77,7 @@
                    Column(
                      children: [
                        Image.network('https://www.zharar.com/uploads/posts/2016-01/1452457643_x_b722107e.jpg',width: 280,height: 200,),
-                       Container(
+                       SizedBox(
                          width: double.maxFinite,
                          height: 50,
                          child: TextButton(
@@ -93,7 +93,7 @@
                        ),
                      ],
                    ),
-                   SizedBox(height: 20,),
+                   const SizedBox(height: 20,),
 
                    const Padding(
                      padding: EdgeInsets.all(8.0),

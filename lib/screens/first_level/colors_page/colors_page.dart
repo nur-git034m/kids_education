@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 class ColorsPage extends StatefulWidget {
-  ColorsPage({Key? key}) : super(key: key);
+  const ColorsPage({Key? key}) : super(key: key);
 
   @override
   State<ColorsPage> createState() => _ColorsPageState();
@@ -44,22 +44,22 @@ class _ColorsPageState extends State<ColorsPage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Image.asset('assets/new_png/redBal.png'),
-                Image.asset('assets/new_png/greenBal.png'),
+                Image.asset('assets/new_png/red.png',height: 150,),
+                Image.asset('assets/new_png/green.png',height: 150,),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Image.asset('assets/new_png/blueBal.png'),
-                Image.asset('assets/new_png/redBal.png'),
+                Image.asset('assets/new_png/blue.png',height: 150,),
+                Image.asset('assets/new_png/yellow.png',height: 150),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Image.asset('assets/new_png/pinkBal.png'),
-                Image.asset('assets/new_png/grayBal.png'),
+                Image.asset('assets/new_png/pink.png',height: 150,),
+                Image.asset('assets/new_png/gray.png',height: 150,),
               ],
             ),
           ],

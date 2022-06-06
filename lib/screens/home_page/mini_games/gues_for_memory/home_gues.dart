@@ -108,7 +108,7 @@ class _HomeGuessState extends State<HomeGuess> {
                       ],
                     )
                   : Container(),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               points != 800
@@ -116,7 +116,7 @@ class _HomeGuessState extends State<HomeGuess> {
                       shrinkWrap: true,
                       //physics: ClampingScrollPhysics(),
                       scrollDirection: Axis.vertical,
-                      gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+                      gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
                           mainAxisSpacing: 0.0, maxCrossAxisExtent: 100.0),
                       children: List.generate(gridViewTiles.length, (index) {
                         return Tile(
@@ -127,63 +127,62 @@ class _HomeGuessState extends State<HomeGuess> {
                         );
                       }),
                     )
-                  : Container(
-                      child: Column(
-                      children: <Widget>[
-                        GestureDetector(
-                          onTap: () {
-                            setState(() {
-                              points = 0;
-                              reStart();
-                            });
-                          },
-                          child: Container(
-                            height: 50,
-                            width: 200,
-                            alignment: Alignment.center,
-                            decoration: BoxDecoration(
+                  : Column(
+                  children: <Widget>[
+                    GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          points = 0;
+                          reStart();
+                        });
+                      },
+                      child: Container(
+                        height: 50,
+                        width: 200,
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(24),
+                        ),
+                        child: const Text(
+                          "Қайталау",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 17,
+                              fontWeight: FontWeight.w500),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const AnimalsPage()),
+                        );
+                      },
+                      child: Container(
+                        height: 50,
+                        width: 200,
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                          border: Border.all(color: Colors.blue, width: 2),
+                          borderRadius: BorderRadius.circular(24),
+                        ),
+                        child: const Text(
+                          "Алғашқы бет",
+                          style: TextStyle(
                               color: Colors.blue,
-                              borderRadius: BorderRadius.circular(24),
-                            ),
-                            child: const Text(
-                              "Қайталау",
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 17,
-                                  fontWeight: FontWeight.w500),
-                            ),
-                          ),
+                              fontSize: 17,
+                              fontWeight: FontWeight.w500),
                         ),
-                        SizedBox(
-                          height: 20,
-                        ),
-                        GestureDetector(
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => AnimalsPage()),
-                            );
-                          },
-                          child: Container(
-                            height: 50,
-                            width: 200,
-                            alignment: Alignment.center,
-                            decoration: BoxDecoration(
-                              border: Border.all(color: Colors.blue, width: 2),
-                              borderRadius: BorderRadius.circular(24),
-                            ),
-                            child: const Text(
-                              "Алғашқы бет",
-                              style: TextStyle(
-                                  color: Colors.blue,
-                                  fontSize: 17,
-                                  fontWeight: FontWeight.w500),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ))
+                      ),
+                    ),
+                  ],
+                    )
             ],
           ),
         ),
@@ -268,7 +267,7 @@ class _TileState extends State<Tile> {
         }
       },
       child: Container(
-        margin: EdgeInsets.all(5),
+        margin: const EdgeInsets.all(5),
         child: myPairs[widget.tileIndex].getImageAssetPath() != ""
             ? Image.asset(myPairs[widget.tileIndex].getIsSelected()!
                 ? myPairs[widget.tileIndex].getImageAssetPath()

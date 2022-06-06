@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:kids_education/screens/home_page/learn_page.dart';
-import 'package:kids_education/screens/mini_games/mini_games_page.dart';
+import 'package:kids_education/screens/first_level/learn_page.dart';
+import 'package:kids_education/screens/home_page/book_pages/book_main_page.dart';
+import 'package:kids_education/screens/home_page/mini_games/mini_games_page.dart';
+
 import 'package:kids_education/screens/second_level/second_level_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -24,12 +26,17 @@ class _HomePageState extends State<HomePage> {
             children: [
               Center(child: Image.asset('assets/new_png/cloud.png')),
               boxToLevel('Уйренейік', () {
+                 Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const BookMainPage()),
+                );
+              }),
+              boxToLevel('Бастауыш деңгей', () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => const LearnPage()),
                 );
               }),
-              boxToLevel('Бастауыш деңгей', () {}),
               boxToLevel('Салт-дәстүр-ауыз әдебиеті', () {
                 Navigator.push(
                   context,

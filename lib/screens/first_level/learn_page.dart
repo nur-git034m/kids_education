@@ -98,7 +98,7 @@ class _LearnPageState extends State<LearnPage> {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) =>  ColorsPage()),
+                  MaterialPageRoute(builder: (context) =>  const ColorsPage()),
                 );
               },
               child: Row(
@@ -186,7 +186,7 @@ class _LearnPageState extends State<LearnPage> {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) =>  TravelPage()),
+                  MaterialPageRoute(builder: (context) =>  const TravelPage()),
                 );
               },
               child: Row(
