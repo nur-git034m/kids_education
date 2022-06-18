@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:kids_education/data/cubit/animal_cubit/animal_cubit.dart';
+import 'package:kids_education/data/cubit/book_cubit/book_cubit.dart';
 import 'package:kids_education/data/cubit/twister_cubit/twister_cubit.dart';
 import 'package:kids_education/data/repositories/animal_repo.dart';
+import 'package:kids_education/data/repositories/sound_repo.dart';
 import 'package:kids_education/data/repositories/twister_repo.dart';
 import 'package:kids_education/screens/home_page/home_page.dart';
 
@@ -23,6 +25,9 @@ class MyApp extends StatelessWidget {
         ),
           BlocProvider(
           create: (_) => AnimalCubit(animalRepo: AnimalRepo()),
+        ),
+         BlocProvider(
+          create: (_) => BookCubit(bookRepo: BookRepo()),
         ),
       ],
       child: MaterialApp(

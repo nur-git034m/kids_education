@@ -47,7 +47,7 @@ class _BookMainPageState extends State<BookMainPage> {
                 alignment: Alignment.centerRight,
                 child: boxToLevel(
                     text: 'ӨЗІМ ТУРАЛЫ',
-                    image: 'assets/new_png/allTra.png',
+                    image: 'assets/new_png/people.png',
                     onTap: () => {
                           Navigator.push(
                             context,
@@ -59,7 +59,7 @@ class _BookMainPageState extends State<BookMainPage> {
                 alignment: Alignment.centerLeft,
                 child: boxToLevel(
                     text: ' МЕНІҢ МЕКТЕБІМ',
-                    image: 'assets/new_png/allTra.png',
+                    image: 'assets/new_png/home.png',
                     onTap: () => {
                           Navigator.push(
                             context,
@@ -71,7 +71,7 @@ class _BookMainPageState extends State<BookMainPage> {
                 alignment: Alignment.centerRight,
                 child: boxToLevel(
                     text: 'МЕНІҢ ОТБАСЫМ',
-                    image: 'assets/new_png/allTra.png',
+                    image: 'assets/new_png/family.png',
                     onTap: () => {
                           Navigator.push(
                             context,
@@ -83,7 +83,7 @@ class _BookMainPageState extends State<BookMainPage> {
                 alignment: Alignment.centerLeft,
                 child: boxToLevel(
                     text: 'ҚОРШАҒАН ӘЛЕМ',
-                    image: 'assets/new_png/allTra.png',
+                    image: 'assets/new_png/earth.png',
                     onTap: () => {
                           Navigator.push(
                             context,
@@ -95,7 +95,7 @@ class _BookMainPageState extends State<BookMainPage> {
                 alignment: Alignment.centerRight,
                 child: boxToLevel(
                     text: 'САЯХАТ',
-                    image: 'assets/new_png/allTra.png',
+                    image: 'assets/new_png/chemo.png',
                     onTap: () => {
                           Navigator.push(
                             context,
@@ -107,7 +107,7 @@ class _BookMainPageState extends State<BookMainPage> {
                 alignment: Alignment.centerLeft,
                 child: boxToLevel(
                     text: 'САЛТ-ДӘСТҮР ЖӘНЕ\n АУЫЗ ӘДЕБИЕТ',
-                    image: 'assets/new_png/allTra.png',
+                    image: 'assets/new_png/book.png',
                     onTap: () => {
                           Navigator.push(
                             context,
@@ -119,7 +119,7 @@ class _BookMainPageState extends State<BookMainPage> {
                 alignment: Alignment.centerRight,
                 child: boxToLevel(
                     text: 'ТАҒАМ ЖӘНЕ СУСЫН',
-image: 'assets/new_png/allTra.png',
+                    image: 'assets/new_png/ear.png',
                     onTap: () => {
                           Navigator.push(
                             context,
@@ -131,7 +131,7 @@ image: 'assets/new_png/allTra.png',
                 alignment: Alignment.centerLeft,
                 child: boxToLevel(
                     text: 'ДЕНІ САУДЫҢ – ЖАНЫ САУ',
-image: 'assets/new_png/allTra.png',
+                    image: 'assets/new_png/temir.png',
                     onTap: () => {
                           Navigator.push(
                             context,

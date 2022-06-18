@@ -54,7 +54,7 @@ List<AnimalInfo> animallist = [
       speed: ' Күніне бір миль'),
   AnimalInfo(2,
       name: 'Балық',
-      color: Colors.lightBlueAccent,
+      color: Color(0xFF40C4FF),
       iconImage: 'assets/game_png/c_fish.png',
       description: "Балық жөтеледі.. Шынымен!",
       paragraph:
@@ -67,7 +67,7 @@ List<AnimalInfo> animallist = [
       speed: ' 3.2 км/сағ'),
   AnimalInfo(3,
       name: 'Піл',
-      color: Colors.grey,
+      color: Color(0xFF9E9E9E),
       iconImage: 'assets/game_png/c_elephant.png',
       description: "Піл - құрлықтағы ең үлкен сүтқоректі.",
       paragraph:
@@ -84,7 +84,7 @@ List<AnimalInfo> animallist = [
       speed: '40 km/h'),
   AnimalInfo(4,
       name: 'Бұғы',
-      color: Colors.orangeAccent,
+      color: Color(0xFFFFAB40),
       iconImage: 'assets/game_png/c_deer.png',
       description: "Бұлардың әртүрлі түрлері бар.",
       paragraph:
@@ -94,7 +94,7 @@ List<AnimalInfo> animallist = [
       speed: " 80 км/сағ"),
   AnimalInfo(5,
       name: 'Жолбарыс',
-      color: Colors.black,
+      color: Color(0xFF000000),
       iconImage: 'assets/game_png/c_tiger.png',
       description: "Жолбарыс бір уақытта 33 футқа дейін секіре алады",
       paragraph:
@@ -104,7 +104,7 @@ List<AnimalInfo> animallist = [
       speed: "49 – 65 км/сағ "),
   AnimalInfo(6,
       name: 'Үй қоян',
-      color: Colors.pink,
+      color: Color(0xFFE91E63),
       iconImage: 'assets/game_png/c_rabbit.png',
       description: "Қоян - қорқыныштан өлуі мүмкін өте нәзік жануар.",
       paragraph: "Қояндар секірумен және сәбізді жеумен танымал."
@@ -114,7 +114,7 @@ List<AnimalInfo> animallist = [
       speed: "4.0 км  3.5 сағ"),
   AnimalInfo(7,
       name: 'Көк құс',
-      color: Colors.lightBlue,
+      color: Color(0xFF03A9F4),
       iconImage: 'assets/game_png/c_bluebird.png',
       description:
           "Көк құстарды жәндіктермен күресу үшін бағбандар жақсы көреді",

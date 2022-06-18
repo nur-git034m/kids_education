@@ -90,6 +90,32 @@ class _MiniGamesPageState extends State<MiniGamesPage> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(28),
                   ),
+                  primary: Colors.purple,
+                ),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const HomeGuess()),
+                  );
+                },
+                child: const Text(
+                  'Жадынан болжау',
+                  style: TextStyle(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 15,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(
+              width: 344,
+              height: 54,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(28),
+                  ),
                   primary: Colors.blue,
                 ),
                 onPressed: () {},
@@ -145,32 +171,7 @@ class _MiniGamesPageState extends State<MiniGamesPage> {
                 ),
               ),
             ),
-            SizedBox(
-              width: 344,
-              height: 54,
-              child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(28),
-                  ),
-                  primary: Colors.purple,
-                ),
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const HomeGuess()),
-                  );
-                },
-                child: const Text(
-                  'Жадынан болжау',
-                  style: TextStyle(
-                    fontWeight: FontWeight.w600,
-                    fontSize: 15,
-                    color: Colors.white,
-                  ),
-                ),
-              ),
-            ),
+            
           ],
         ),
       ),
